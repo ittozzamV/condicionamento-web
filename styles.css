@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.forms{
+    position: relative;
+    margin-top: 25%;
+    margin-right: 50%;
+    scale: 1.5;
+}
+
+.container1{
+    position: absolute;
+    margin-left: 115%;
+    margin-top: -12%;
+    width: 100px;
+}
+
+.container2{
+    position: absolute;
+    margin-left: 200%;
+    margin-top: -12%;
+    width: 200px;
+}
+
+.glist, .elist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.nglist{
+    transform: scaleY(1);
+}
+
+.g:hover, .e:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+.genero, .escolaridade{
+    background-color: burlywood;
+}
+
+.genero:hover, .escolaridade:hover{
+    background-color: #DF9420;
+}
+
+.genero, .g{
+    padding: 2px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.escolaridade, .e{
+    padding: 2px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: 0.3s;
+}
+
+#enviar{
+    position: absolute;
+    margin-left: 250%;
+}

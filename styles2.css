@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.container1{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.container2{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.container3{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.container4{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+.b1, .b2, .b3, .b4{
+    background-color: burlywood;
+}
+
+.b1:hover, .b2:hover, .b3:hover, .b4:hover{
+    background-color: #DF9420;
+}
+
+
+.pronomes:hover, .verbo:hover, .complemento:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+.b1,.pronomes, .b2, .verbo, .b3, .complemento, .b4{
+    padding: 12px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.plist, .vlist, .clist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newlist{
+    transform: scaleY(1);
+}
